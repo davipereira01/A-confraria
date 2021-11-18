@@ -65,7 +65,7 @@ $('button.encode, button.decode').click(function(event) {
     var width = $originalCanvas[0].width;
     var height = $originalCanvas[0].height;
   
-    // Check if the image is big enough to hide the message
+    
     if ((text.length * 8) > (width * height * 3)) {
       $(".error")
         .text("Text too long for chosen image....")
@@ -84,7 +84,7 @@ $('button.encode, button.decode').click(function(event) {
       'height': height
     });
   
-    // Normalize the original image and draw it
+    
     var original = originalContext.getImageData(0, 0, width, height);
     var pixel = original.data;
     for (var i = 0, n = pixel.length; i < n; i += 4) {
@@ -96,12 +96,12 @@ $('button.encode, button.decode').click(function(event) {
     }
     nulledContext.putImageData(original, 0, 0);
   
-    // Convert the message to a binary string
+    
     var binaryMessage = "";
     for (i = 0; i < text.length; i++) {
       var binaryChar = text[i].charCodeAt(0).toString(2);
   
-      // Pad with 0 until the binaryChar has a lenght of 8 (1 Byte)
+      
       while(binaryChar.length < 8) {
         binaryChar = "0" + binaryChar;
       }
@@ -110,7 +110,7 @@ $('button.encode, button.decode').click(function(event) {
     }
     $('.binary textarea').text(binaryMessage);
   
-    // Apply the binary string to the image and draw it
+    
     var message = nulledContext.getImageData(0, 0, width, height);
     pixel = message.data;
     counter = 0;
@@ -170,6 +170,21 @@ $('button.encode, button.decode').click(function(event) {
 
 
 
+
+
+
+
+
+  
+      
+  
+    
+      
+        
+  
+        
+      
+    
 
 
 

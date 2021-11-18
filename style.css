@@ -7,19 +7,19 @@
 h3 {
 
     margin-top: 5rem;
-    
-    }
 
-    canvas {
-        
-        max-width: 100%;
-        margin-top: 1rem;
-    }
+}
 
-    footer {
-        margin-top: 82rem!important;
-        
-        }
+canvas {
+
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+footer {
+    margin-top: 82rem !important;
+
+}
 
 
 
@@ -47,10 +47,12 @@ p {
     list-style: none;
     gap: .5rem;
 }
+
 #menu a {
     display: block;
     padding: .5rem;
 }
+
 .menu ul li a {
     padding: 2px 17px;
     display: inline-block;
@@ -58,6 +60,7 @@ p {
     text-decoration: none;
     font-weight: 700;
 }
+
 .menu ul li a:hover {
     color: #ff0000;
 }
@@ -76,6 +79,7 @@ p {
         visibility: hidden;
         overflow-y: hidden;
     }
+
     #nav.active #menu {
         display: block;
         height: calc(100vh - 70px);
@@ -84,6 +88,7 @@ p {
         color: white;
         z-index: 10000;
     }
+
     #menu a {
         padding: 1rem;
         margin: 0 0.5rem;
@@ -92,6 +97,7 @@ p {
         text-decoration: none;
         display: block;
     }
+
     .menu ul li a {
         padding: 2px 17px;
         display: inline-block;
@@ -99,9 +105,11 @@ p {
         text-decoration: none;
         font-weight: 700;
     }
+
     .menu ul li a:hover {
         color: #ff0000;
     }
+
     #btn-mobile {
         display: flex;
         padding: .5rem 1rem;
@@ -111,12 +119,14 @@ p {
         cursor: pointer;
         gap: .5rem;
     }
+
     #hamburger {
         display: block;
         border-top: 2px solid;
         width: 20px;
         color: white;
     }
+
     #hamburger::after, #hamburger::before {
         content: '';
         display: block;
@@ -127,17 +137,21 @@ p {
         transition: .6s;
         position: relative;
     }
+
     #nav.active #hamburger {
         border-top-color: transparent;
         z-index: 100000;
     }
+
     #nav.active #hamburger::before {
         transform: rotate(135deg);
     }
+
     #nav.active #hamburger::after {
         transform: rotate(-135deg);
         top: -7px;
     }
+
     #header {
         box-sizing: border-box;
         height: 80px;
@@ -148,22 +162,27 @@ p {
         background: rgb(44, 43, 43);
         font-family: fff;
     }
+
     .max-width {
         max-width: 500px;
         width: 100%;
     }
+
     #containerScrollOne {
         display: flex;
         flex-direction: column;
     }
+
     #callToActionBox {
         background-color: yellow;
         height: 28rem;
     }
+
     #catImageBox {
         background-color: #2c2b2b;
         height: 33rem;
     }
+
     #catImage1 {
         height: 11rem;
         margin-top: 3rem;
@@ -171,6 +190,7 @@ p {
         width: 83vw;
         border-radius: 10px;
     }
+
     #catImage2 {
         height: 12rem;
         width: 83vw;
@@ -178,6 +198,7 @@ p {
         margin-top: 1rem;
         border-radius: 10px;
     }
+
     .textContainer {
         margin-left: 2rem;
         font-size: 2rem;
@@ -185,14 +206,17 @@ p {
         margin-top: 3rem;
         width: 19rem;
     }
+
     .textContainer h2 {
         color: red;
         font-size: 3rem;
         margin-top: 1rem;
     }
+
     .textContainer p {
         font-size: 2rem;
     }
+
     .formControl {
         display: block;
         margin-top: 1rem;
@@ -213,12 +237,15 @@ p {
         transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
         resize: none;
     }
+
     #revolutionP {
         font-size: 2rem;
     }
+
     input[type="file"] {
         display: none;
     }
+
     label {
         padding: 20px 10px;
         width: 83vw;
@@ -233,12 +260,15 @@ p {
         border: none;
         border-radius: 10px;
     }
+
     form {
         margin-left: 2rem;
     }
+
     #flImage {
         margin-top: 2rem;
     }
+
     #submit {
         margin-top: 1rem;
         padding: 20px 10px;
@@ -254,6 +284,7 @@ p {
         border: none;
         border-radius: 10px;
     }
+
     #uploadImage {
         width: 2rem;
         height: 2rem;
@@ -261,6 +292,7 @@ p {
         margin-top: 10px;
         margin-left: 1rem;
     }
+
     #encodeImage {
         width: 2rem;
         height: 2rem;
@@ -269,6 +301,7 @@ p {
         margin-left: 1rem;
         border: none;
     }
+
     footer {
         box-sizing: border-box;
         height: 80px;
@@ -284,8 +317,9 @@ p {
         flex-direction: column;
         outline: none;
         text-decoration: none;
-        margin-bottom: 0!important;
+        margin-bottom: 0 !important;
     }
+
     footer a {
         outline: none;
         text-decoration: none;
@@ -304,22 +338,27 @@ p {
         background: rgb(44, 43, 43);
         font-family: fff;
     }
+
     .max-width {
         max-width: 500px;
         width: 100%;
     }
+
     #containerScrollOne {
         display: flex;
         flex-direction: column;
     }
+
     #callToActionBox {
         background-color: yellow;
         height: 35rem;
     }
+
     #catImageBox {
         background-color: ;
         height: 48rem;
     }
+
     #catImage1 {
         height: 15rem;
         margin-top: 5rem;
@@ -327,6 +366,7 @@ p {
         width: 72vw;
         border-radius: 10px;
     }
+
     #catImage2 {
         height: 15rem;
         margin-top: 5rem;
@@ -334,6 +374,7 @@ p {
         width: 72vw;
         border-radius: 10px;
     }
+
     .textContainer {
         margin-left: 2rem;
         font-size: 3.5rem;
@@ -343,22 +384,27 @@ p {
         height: 30rem;
         margin-top: 3rem;
     }
+
     .textContainer h2 {
         color: red;
         font-size: 3rem;
     }
+
     .textContainer p {
         font-size: 2rem;
     }
+
     #menu {
         display: flex;
         list-style: none;
         gap: .5rem;
         transition: .6s;
     }
+
     #menu a {
         display: block;
     }
+
     .menu ul li a {
         padding: 2px 17px;
         display: inline-block;
@@ -366,15 +412,19 @@ p {
         text-decoration: none;
         font-weight: 700;
     }
+
     .menu ul li a:hover {
         color: #ff0000;
     }
+
     #textContainerTwo {
         height: 5rem;
     }
+
     #revolutionP {
         font-size: 2rem;
     }
+
     .formControl {
         display: block;
         margin-top: 1rem;
@@ -395,9 +445,11 @@ p {
         transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
         resize: none;
     }
+
     input[type="file"] {
         display: none;
     }
+
     label {
         padding: 20px 10px;
         width: 84vw;
@@ -412,15 +464,19 @@ p {
         border: none;
         border-radius: 10px;
     }
+
     #containerScrollTwo {
         height: 30rem;
     }
+
     form {
         margin-left: 2rem;
     }
+
     #flImage {
         margin-top: 2rem;
     }
+
     #submit {
         margin-top: 1rem;
         padding: 20px 10px;
@@ -436,6 +492,7 @@ p {
         border: none;
         border-radius: 10px;
     }
+
     #uploadImage {
         width: 2rem;
         height: 2rem;
@@ -443,6 +500,7 @@ p {
         margin-top: 10px;
         margin-left: 1rem;
     }
+
     #encodeImage {
         width: 2rem;
         height: 2rem;
@@ -451,6 +509,7 @@ p {
         margin-left: 1rem;
         border: none;
     }
+
     footer {
         box-sizing: border-box;
         height: 80px;
@@ -466,8 +525,9 @@ p {
         flex-direction: column;
         outline: none;
         text-decoration: none;
-        margin-bottom: 0!important;
+        margin-bottom: 0 !important;
     }
+
     footer a {
         outline: none;
         text-decoration: none;
@@ -488,15 +548,18 @@ p {
         background: rgb(44, 43, 43);
         font-family: fff;
     }
+
     #menu {
         display: flex;
         list-style: none;
         gap: .5rem;
     }
+
     #menu a {
         display: block;
         padding: .5rem;
     }
+
     .menu ul li a {
         padding: 2px 17px;
         display: inline-block;
@@ -504,30 +567,38 @@ p {
         text-decoration: none;
         font-weight: 700;
     }
+
     .menu ul li a:hover {
         color: #ff0000;
     }
+
     #btn-mobile {
         display: none;
     }
+
     input[type='file'] {
         display: none;
     }
+
     .max-width {
         max-width: 500px;
         width: 100%;
     }
+
     #containerScrollOne {
         display: flex;
     }
+
     #callToActionBox {
         background-color: ;
         height: 40rem;
     }
+
     #catImageBox {
         background-color: ;
         height: 60rem;
     }
+
     #catImage1 {
         height: 17rem;
         margin-top: 5rem;
@@ -535,6 +606,7 @@ p {
         width: 74vw;
         border-radius: 10px;
     }
+
     #catImage2 {
         height: 17rem;
         margin-top: 5rem;
@@ -542,6 +614,7 @@ p {
         width: 74vw;
         border-radius: 10px;
     }
+
     .textContainer {
         margin-left: 4rem;
         font-size: 3rem;
@@ -549,10 +622,12 @@ p {
         margin-top: 1rem;
         width: 27rem;
     }
+
     .textContainer h2 {
         color: red;
         font-size: 3rem;
     }
+
     .textContainer p {
         font-size: 2rem;
         margin-left: 0rem;
@@ -572,15 +647,18 @@ p {
         background: rgb(44, 43, 43);
         font-family: fff;
     }
+
     #menu {
         display: flex;
         list-style: none;
         gap: .5rem;
     }
+
     #menu a {
         display: block;
         padding: .5rem;
     }
+
     .menu ul li a {
         padding: 2px 17px;
         display: inline-block;
@@ -588,35 +666,42 @@ p {
         text-decoration: none;
         font-weight: 700;
     }
+
     .menu ul li a:hover {
         color: #ff0000;
     }
+
     #btn-mobile {
         display: none;
     }
+
     input[type='file'] {
         display: none;
     }
+
     .max-width {
         max-width: 500px;
         width: 100%;
     }
+
     #containerScrollOne {
         display: grid;
         grid-template-columns: 50vw 50vw;
         overflow: hidden;
     }
+
     #callToActionBox {
         background-color: yellow;
         height: 43rem;
         width: 50vw;
     }
+
     #catImageBox {
         background-color: ;
         height: 43rem;
         width: 50vw;
     }
-    
+
     #catImage1 {
         height: 15rem;
         margin-top: 0rem;
@@ -624,7 +709,7 @@ p {
         width: 30vw;
         border-radius: 10px;
     }
-    
+
     #catImage2 {
         height: 14rem;
         width: 30vw;
@@ -632,8 +717,8 @@ p {
         margin-top: 2rem;
         border-radius: 10px;
     }
-    
-    
+
+
     .textContainer {
         margin-left: 4rem;
         font-size: 4rem;
@@ -641,19 +726,24 @@ p {
         width: 44vw;
         word-break: break-word;
     }
+
     .textContainer h2 {
         color: red;
         font-size: 3rem;
     }
+
     .textContainer p {
         font-size: 2rem;
     }
+
     #revolutionP {
         font-size: 3rem;
     }
+
     input[type="file"] {
         display: none;
     }
+
     label {
         padding: 20px 10px;
         width: 232px;
@@ -665,10 +755,13 @@ p {
         margin-top: 80px;
         cursor: pointer;
     }
+
     form {
         margin-left: 4rem;
     }
+
     #flImage {}
+
     #submit {
         margin-top: 1rem;
         padding: 20px 10px;
@@ -681,6 +774,7 @@ p {
         margin-top: 15px;
         cursor: pointer;
     }
+
     .formControl {
         display: block;
         margin-top: 1rem;
@@ -713,22 +807,22 @@ p {
         flex-direction: column;
         flex-wrap: nowrap;
         font-family: fff;
-        
-        }
 
-        button {
-            padding: 20px 10px;
-            width: 232px;
-            background-color: red;
-            color: #FFF;
-            text-transform: uppercase;
-            text-align: center;
-            display: block;
-            margin-top: 14px;
-            cursor: pointer;
-            border-radius: 10px;
-            border: none;
-        }
+    }
+
+    button {
+        padding: 20px 10px;
+        width: 232px;
+        background-color: red;
+        color: #FFF;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        margin-top: 14px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

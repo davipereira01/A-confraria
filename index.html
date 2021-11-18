@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="glitch.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>Cat Supremacy</title>
+</head>
+
+<body>
+
+    <header id="header">
+
+        <div class="logo" id="logo">
+
+            <i class="fas fa-cubes"></i>
+
+        </div>
+
+
+
+
+        <nav class="menu" id="nav" style="z-index: 100000;">
+
+
+
+            <button class="hamburger-menu" id="btn-mobile">
+                <span id="hamburger"></span>
+            </button>
+
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+
+        <div class="container" id="containerScrollOne">
+
+
+            <div class="box" id='callToActionBox'>
+
+                <div class="textContainer">
+
+                    <h1>A Confraria!</h1>
+
+                    <h2>Stop the cat dictatorship</h2>
+                    <hr>
+                    <p>Long live the revolution</p>
+
+
+                </div>
+
+
+
+
+            </div>
+            <div class="box" id='catImageBox'>
+
+                <img class="glitch" id='catImage1' src="img/cat.gif" alt="gato fumante maneiro">
+
+                <img class="glitch" id='catImage2' src="img/protest2.gif" alt="gato puxando seu humano pet">
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <div class="container" id="containerScrollTwo">
+
+            <div class="max-width">
+
+
+            </div>
+
+            <div class="textContainer" id="textContainerTwo" >
+
+                <p id="revolutionP">Start The revolution Today</p>
+
+            </div>
+
+
+
+            <form class="form" action="http://localhost:8000" method="post" enctype="multipart/form-data" id='upload-form'>
+
+                <div class="form-group">
+
+                    <img id="uploadImage" src="img/upload.png" alt="icone de upload">
+
+                <label for="flImage">Escolher imagem</label>
+                <input onchange='previewEncodeImage()' class="form-control" type="file" id='flImage' name="baseFile" accept='img/*'>
+                <textarea name="" id="" class="formControl" rows="3" placeholder="Text your message here"></textarea>
+
+                <img id="encodeImage" src="img/encode.png" alt="icone de criptografia">
+                <input id='submit' type="submit" value="Encode">
+
+
+                    
+                </div>
+
+                
+            </form>
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </main>
+
+
+
+
+    <footer style="text-align: center; margin-top: 20px; margin-bottom: 10px;">
+        &copy; 2021 by <a href="https://www.linkedin.com/in/davi-spereira/">Davi Pereira</a>
+
+
+    </footer>
+
+    <style>
+        canvas {
+          max-width: 100%;
+        }
+      </style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script>
+
+        const CLIENT_ID = '4223049527c34e1';
+
+        const uploadImage = (e) => {
+
+            e.preventDefault();
+            console.log(uploadImage);
+
+        }
+        const form = document.getElementById('upload-form');
+        form.addEventListener("submit", uploadImage);
+
+    </script>
+
+    
+    <script src="script.js"></script>
+    <script src="read-info.js"></script>
+    
+
+</body>
+
+
+
+   
+
+    
+    <script src="script.js"></script>
+    <script src="read-info.js"></script>
+
+
+    
+
+</body>
+
+</html>

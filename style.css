@@ -4,22 +4,39 @@
     box-sizing: border-box;
 }
 
-h3 {
 
-    margin-top: 5rem;
+.encode {
+
+    padding: 20px 10px;
+    width: 82vw;
+    background-color: red;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
 
 }
 
-canvas {
 
-    max-width: 100%;
-    margin-top: 1rem;
+.images-box {
+
+    width: 82vw;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    height: 46rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: fff;
 }
 
-footer {
-    margin-top: 82rem !important;
 
-}
+
 
 
 
@@ -325,9 +342,51 @@ p {
         text-decoration: none;
         color: white;
     }
+
+
 }
 
 @media only screen and (min-width: 600px) {
+
+
+
+    canvas {
+
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+
+    .encode {
+
+        padding: 20px 10px;
+        width: 87vw;
+        background-color: red;
+        color: #FFF;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        margin-top: 14px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+
+    }
+
+
+    .images-box {
+
+        display: flex;
+        justify-content: space-between;
+        height: 70rem;
+        width: 25rem;
+        margin-left: 3rem;
+        margin-top: 4rem;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        font-family: fff;
+
+    }
+
     #header {
         box-sizing: border-box;
         height: 80px;
@@ -452,7 +511,7 @@ p {
 
     label {
         padding: 20px 10px;
-        width: 84vw;
+        width: 87vw;
         background-color: teal;
         color: #FFF;
         text-transform: uppercase;
@@ -533,6 +592,10 @@ p {
         text-decoration: none;
         color: white;
     }
+
+
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -548,6 +611,8 @@ p {
         background: rgb(44, 43, 43);
         font-family: fff;
     }
+
+
 
     #menu {
         display: flex;
@@ -637,6 +702,9 @@ p {
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
+
+
+
     #header {
         box-sizing: border-box;
         height: 80px;
@@ -796,23 +864,11 @@ p {
         resize: none;
     }
 
-    .images-box {
 
-        display: flex;
-        justify-content: space-between;
-        height: 70rem;
-        width: 32%;
-        margin-left: 3rem;
-        margin-top: 4rem;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        font-family: fff;
-
-    }
 
     button {
         padding: 20px 10px;
-        width: 232px;
+        width: 232px !important;
         background-color: red;
         color: #FFF;
         text-transform: uppercase;

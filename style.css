@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+h3 {
+
+    margin-top: 5rem;
+    
+    }
+
+    canvas {
+        
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+
+    footer {
+        margin-top: 82rem!important;
+        
+        }
+
+
+
 @font-face {
     font-family: fff;
     src: url(font/fff/FFF_Ultra_TRIAL.ttf);
@@ -682,6 +701,34 @@ p {
         transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
         resize: none;
     }
+
+    .images-box {
+
+        display: flex;
+        justify-content: space-between;
+        height: 70rem;
+        width: 32%;
+        margin-left: 3rem;
+        margin-top: 4rem;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        font-family: fff;
+        
+        }
+
+        button {
+            padding: 20px 10px;
+            width: 232px;
+            background-color: red;
+            color: #FFF;
+            text-transform: uppercase;
+            text-align: center;
+            display: block;
+            margin-top: 14px;
+            cursor: pointer;
+            border-radius: 10px;
+            border: none;
+        }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

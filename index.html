@@ -41,7 +41,7 @@
             <ul id="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                
+
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -96,7 +96,7 @@
 
             </div>
 
-            <div class="textContainer" id="textContainerTwo" >
+            <div class="textContainer" id="textContainerTwo">
 
                 <p id="revolutionP">Start The revolution Today</p>
 
@@ -104,29 +104,57 @@
 
 
 
-            <form class="form" action="http://localhost:8000" method="post" enctype="multipart/form-data" id='upload-form'>
+            <form class="form" id='upload-form'>
+
+                <img id="uploadImage" src="img/upload.png" alt="icone de upload">
+
+                <label for="flImage">Escolher imagem</label>
+                <input id='flImage' class="form-control" type="file" name="baseFile" onchange="previewEncodeImage()">
 
                 <div class="form-group">
 
-                    <img id="uploadImage" src="img/upload.png" alt="icone de upload">
-
-                <label for="flImage">Escolher imagem</label>
-                <input onchange='previewEncodeImage()' class="form-control" type="file" id='flImage' name="baseFile" accept='img/*'>
-                <textarea name="" id="" class="formControl" rows="3" placeholder="Text your message here"></textarea>
-
-                <img id="encodeImage" src="img/encode.png" alt="icone de criptografia">
-                <input id='submit' type="submit" value="Encode">
 
 
-                    
+                    <textarea name="" id="" class="formControl message" rows="3"
+                        placeholder="Text your message here"></textarea>
+
                 </div>
 
-                
+
+                <img id="encodeImage" src="img/encode.png" alt="icone de criptografia">
+                <button class="encode btn btn-default pull-right" onclick="encodeMessage()">Encode</button>
+
             </form>
 
 
 
 
+            <div class="images" style="display: none;">
+
+                <div class="images-box">
+
+                    <div class="original" style="display: none;">
+                        <h3>Original</h3>
+                        <canvas></canvas>
+                    </div>
+                    <div class="nulled" style="display: none;">
+                        <h3>Normalized</h3>
+                        <canvas></canvas>
+                    </div>
+                    <div class="message" style="display: none;">
+                        <h3>Message hidden in image <span class="glyphicon glyphicon-arrow-right"></span>
+                            
+                        </h3>
+                        <canvas></canvas>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
 
 
 
@@ -141,51 +169,22 @@
 
     <footer style="text-align: center; margin-top: 20px; margin-bottom: 10px;">
         &copy; 2021 by <a href="https://www.linkedin.com/in/davi-spereira/">Davi Pereira</a>
-
-
     </footer>
+
 
     <style>
         canvas {
-          max-width: 100%;
+            max-width: 100%;
         }
-      </style>
+    </style>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-    <script>
-
-        const CLIENT_ID = '4223049527c34e1';
-
-        const uploadImage = (e) => {
-
-            e.preventDefault();
-            console.log(uploadImage);
-
-        }
-        const form = document.getElementById('upload-form');
-        form.addEventListener("submit", uploadImage);
-
-    </script>
-
-    
-    <script src="script.js"></script>
-    <script src="read-info.js"></script>
-    
-
-</body>
-
-
-
-   
-
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="read-info.js"></script>
 
 
-    
+
 
 </body>
 

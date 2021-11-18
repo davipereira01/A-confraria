@@ -9,7 +9,8 @@ O case solicitou que fosse criado um algoritmo de Esteganografia para que fosse 
 
 # Passo a passo
 
-1 - Acesse o link # https://stopthecatsupremacy.netlify.app/
+1 - Acesse o link 
+# https://stopthecatsupremacy.netlify.app/
 
 2 - No input escolher uma imagem escolha uma imagem qualquer
 

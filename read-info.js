@@ -2,7 +2,7 @@ $('button.encode, button.decode').click(function(event) {
     event.preventDefault();
   });
   
-  function previewDecodeImage() {
+  function showDecodeImage() {
     var file = document.querySelector('input[name=decodeFile]').files[0];
   
     previewImage(file, ".decode canvas", function() {
@@ -10,7 +10,7 @@ $('button.encode, button.decode').click(function(event) {
     });
   }
   
-  function previewEncodeImage() {
+  function showEncodeImage() {
     var file = document.querySelector("input[name=baseFile]").files[0];
   
     $(".images .nulled").hide();
@@ -48,7 +48,7 @@ $('button.encode, button.decode').click(function(event) {
     }
   }
   
-  function encodeMessage() {
+  function hideMessage() {
     $(".error").hide();
     $(".binary").hide();
   
@@ -65,10 +65,10 @@ $('button.encode, button.decode').click(function(event) {
     var width = $originalCanvas[0].width;
     var height = $originalCanvas[0].height;
   
-    
+   
     if ((text.length * 8) > (width * height * 3)) {
       $(".error")
-        .text("Text too long for chosen image....")
+        .text("Esse texto é longo demais para essa imagem")
         .fadeIn();
   
       return;
@@ -84,7 +84,7 @@ $('button.encode, button.decode').click(function(event) {
       'height': height
     });
   
-    
+
     var original = originalContext.getImageData(0, 0, width, height);
     var pixel = original.data;
     for (var i = 0, n = pixel.length; i < n; i += 4) {
@@ -97,27 +97,27 @@ $('button.encode, button.decode').click(function(event) {
     nulledContext.putImageData(original, 0, 0);
   
     
-    var binaryMessage = "";
+    var binMessage = "";
     for (i = 0; i < text.length; i++) {
       var binaryChar = text[i].charCodeAt(0).toString(2);
   
-      
+    
       while(binaryChar.length < 8) {
         binaryChar = "0" + binaryChar;
       }
   
-      binaryMessage += binaryChar;
+      binMessage += binaryChar;
     }
-    $('.binary textarea').text(binaryMessage);
+    $('.binary textarea').text(binMessage);
   
-    
+   
     var message = nulledContext.getImageData(0, 0, width, height);
     pixel = message.data;
     counter = 0;
     for (var i = 0, n = pixel.length; i < n; i += 4) {
       for (var offset =0; offset < 3; offset ++) {
-        if (counter < binaryMessage.length) {
-          pixel[i + offset] += parseInt(binaryMessage[counter]);
+        if (counter < binMessage.length) {
+          pixel[i + offset] += parseInt(binMessage[counter]);
           counter++;
         }
         else {
@@ -137,7 +137,7 @@ $('button.encode, button.decode').click(function(event) {
     var originalContext = $originalCanvas[0].getContext("2d");
   
     var original = originalContext.getImageData(0, 0, $originalCanvas.width(), $originalCanvas.height());
-    var binaryMessage = "";
+    var binMessage = "";
     var pixel = original.data;
     for (var i = 0, n = pixel.length; i < n; i += 4) {
       for (var offset =0; offset < 3; offset ++) {
@@ -146,7 +146,7 @@ $('button.encode, button.decode').click(function(event) {
           value = 1;
         }
   
-        binaryMessage += value;
+        binMessage += value;
       }
     }
   
@@ -164,15 +164,6 @@ $('button.encode, button.decode').click(function(event) {
     $('.binary-decode textarea').text(output);
     $('.binary-decode').fadeIn();
   };
-
-
-
-
-
-
-
-
-
 
 
   

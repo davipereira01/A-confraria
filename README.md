@@ -1,5 +1,5 @@
 # A confraria
- Teste Web JR
+ Teste Developer JR
 
 * A confraria é um projeto destinado ao processo seletivo da empresa Cromai.
 
